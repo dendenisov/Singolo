@@ -1,0 +1,156 @@
+  body {
+      font-family: 'Lato', sans-serif;
+      width: 1020px;
+      margin: 0 auto;
+  }
+
+  .content {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .quote {
+      background: #f06c64;
+  }
+
+  .quote-bottom {
+      height: 6px;
+      background-color: #ea676b;
+  }
+
+  .quote-title {
+      font-size: 30px;
+      line-height: 18px;
+      color: #f0d8d9;
+      font-weight: 900;
+      padding-top: 68px;
+  }
+
+  .quote-description {
+      font-size: 18px;
+      line-height: 30px;
+      color: #f0d8d9;
+      font-weight: 300;
+      margin-top: 27px;
+      text-align: justify;
+  }
+
+  .quote-2-column {
+      margin-top: 44px;
+      display: flex;
+      padding-bottom: 18px;
+  }
+
+  .contact-info {
+      margin-left: 20px;
+  }
+
+  textarea, input {
+      padding: 0 15px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      width: 589px;
+      background-color: #d6564f;
+      font-size: 12px;
+      height: 38px;
+      font-weight: 400;
+      font-family: 'Lato';
+      color: #f0d8d9;
+  }
+
+  textarea {
+      resize: none;
+      height: 192px;
+      padding-top: 10px;
+  }
+
+  input {
+      margin-bottom: 16px;
+  }
+
+  ::placeholder {
+      color: #f48c8f;
+  }
+
+  textarea:focus, input:focus {
+      box-shadow: 0 0 3px #f0d8d9;
+  }
+
+  .contact-info-title {
+      font-size: 18px;
+      line-height: 18px;
+      color: #f0d8d9;
+      font-weight: 900;
+  }
+
+  .contact-info-description, .contact-info-contacts p, .contact-info-contacts a {
+      font-size: 12px;
+      line-height: 22px;
+      color: #f0d8d9;
+      font-weight: 400;
+      text-decoration: none;
+  }
+
+  .contact-info-description {
+      margin-top: 10px;
+  }
+
+  .contact-info-contacts {
+      margin-top: 20px;
+  }
+
+  .contact-info-location {
+      background: url(assets/1location.png) no-repeat 4px 5px;
+      padding-left: 24px;
+  }
+
+  .contact-info-phone {
+      background: url(assets/2phone.png) no-repeat 2px 1px;
+      padding-left: 24px;
+  }
+
+  .contact-info-mail {
+      background: url(assets/3mail.png) no-repeat 1px 6px;
+      padding-left: 24px;
+  }
+
+  .submit-button {
+      margin-top: 15px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 25px;
+      background: #f0d8d9;
+      color: #a3403b;
+      font-size: 12px;
+      line-height: 22px;
+      font-weight: 400;
+      font-family: 'Lato';
+      cursor: pointer;
+  }
+
+  button, button:active, button:focus {
+      outline: none;
+  }
+
+  footer {
+      background: #2d303a;
+      padding: 22px 40px;
+  }
+
+  footer .content {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .footer-socials a {
+      margin-left: 5px;
+  }
+
+  .copyright {
+      padding: 8px 2px;
+  }
+
+  .contact-info-mail {
+      padding-top: 2px;
+  }

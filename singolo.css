@@ -1,0 +1,484 @@
+body {
+    font-family: 'Lato', sans-serif;
+    cursor: default;
+  }
+  
+  .content {
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  header .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header {
+    box-sizing: border-box;
+    background-color: #2d303a;
+    color: #fff;
+    height: 89px;
+  
+    width: 100%;
+    z-index: 10000;
+  }
+  
+  .logo {
+    padding-top: 40px;
+  }
+  
+  .logo a {
+    font-size: 25px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: initial;
+    height: 20px;
+  }
+  
+  .logo a::after {
+    content: '*';
+    color: #f06c64;
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header ul li a {
+    color: #fff;
+  
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  header ul li a:hover {
+    color: #f06c64;
+  }
+  
+  header ul li::after {
+    content: '.';
+    position: relative;
+    bottom: 3px;
+    left: 12px;
+    color: #494e62;
+  }
+  
+  header ul li:last-child::after {
+    content: '';
+  }
+  
+  .navbar {
+    width: 370px;
+    padding-top: 40px;
+  }
+  
+  .header-bottom {
+    height: 6px;
+    background-color: #323746;
+  }
+  
+  .slider {
+    height: 594px;
+    background-color: #f06c64;
+  }
+
+  .slider-left:hover,
+  .slider-right:hover {
+    outline: none;
+    filter: brightness(5) opacity(0.5);
+  }
+  
+  .slider .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider-right {
+    transform: scaleX(-1);
+  }
+  
+  .slider-bottom {
+    height: 6px;
+    background-color: #ea676b;
+  }
+  
+  .slider-center {
+    display: flex;
+  }
+  
+  .slider a img {
+    margin-top: 281px;
+    margin-left: 2px;
+  }
+  
+  .vertical {
+    width: 240px;
+    height: 483px;
+    padding-top: 53px;
+    padding-right: 72px;
+  }
+  
+  .horizontal {
+    width: 484px;
+    height: 240px;
+    padding-top: 174px;
+  }
+  
+  .services {
+    height: 494px;
+    background-color: #f2f2f2;
+  }
+  
+  .services-bottom {
+    height: 6px;
+    background-color: #ffffff;
+  }
+  
+  .services-cards {
+    padding-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    font-size: 30px;
+    color: #666d89;
+    font-weight: 900;
+    padding-top: 62px;
+  }
+  
+  .services-description {
+    padding-top: 21px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    text-align: justify;
+  }
+  
+  .card {
+    display: flex;
+    flex-basis: 300px;
+    margin-bottom: 29px;
+  }
+  
+  .card-description {
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-weight: 400;
+    line-height: 22px;
+    padding-top: 10px;
+    text-align: justify;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    font-size: 18px;
+  }
+  
+  .card-logo {
+    padding-right: 19px;
+    padding-left: 0px;
+    padding-top: 1px;
+  }
+  
+  .services-bottom {
+    height: 6px;
+    background-color: #fff;
+  }
+  
+  .portfolio {
+    height: 863px;
+    background: #2d303a;
+  }
+  
+  .portfolio-bottom {
+    height: 6px;
+    background: #323746;
+  }
+  
+  .portfolio-title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    padding-top: 68px;
+  }
+  
+  .portfolio-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    margin-top: 27px;
+  }
+  
+  .portfolio-menu {
+    margin-top: 11px;
+  }
+  
+  .portfolio-button {
+    outline: none;
+  }
+  
+  .portfolio-button:active,
+  .portfolio-button:focus,
+  .portfolio-button:hover {
+    color: #dedede;
+    border: 1px solid #c5c5c5;
+    outline: none;
+  }
+  
+  .portfolio-button {
+    cursor: pointer;
+    height: 22px;
+    border-radius: 5px;
+    background-color: #2d303a;
+    border: 1px solid #666d89;
+    color: #767e9e;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0 6px;
+    margin-right: 6px;
+  }
+  
+  .portfolio-images {
+    margin-top: 18px;
+    height: 615px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-image {
+    width: 220px;
+    height: 187px;
+    margin-bottom: 20px;
+  }
+  
+  .about {
+    height: 728px;
+    background: #f2f2f2;
+  }
+  
+  .about-bottom {
+    height: 6px;
+    background: #ffffff;
+  }
+  
+  .about-title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    padding-top: 67px;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    margin-top: 27px;
+    text-align: justify;
+  }
+  
+  .about-cards {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .about-card {
+    width: 300px;
+    height: 443px;
+  }
+  
+  .card-name {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    margin-top: 15px;
+  }
+  
+  .card-description {
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-weight: 400;
+    text-align: justify;
+  }
+  
+  .card-socials {
+    margin-top: 22px;
+  }
+  
+  img.social {
+    margin-right: 5px;
+    border-radius: 16px;
+  }
+  
+  .quote {
+    background: #f06c64;
+  }
+  
+  .quote-bottom {
+    height: 6px;
+    background-color: #ea676b;
+  }
+  
+  .quote-title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-weight: 900;
+    padding-top: 68px;
+  }
+  
+  .quote-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-weight: 300;
+    margin-top: 27px;
+    text-align: justify;
+  }
+  
+  .quote-2-column {
+    margin-top: 44px;
+    display: flex;
+    padding-bottom: 18px;
+  }
+  
+  .contact-info {
+    margin-left: 21px;
+  }
+  
+  textarea,
+  input {
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 589px;
+    background-color: #d6564f;
+    font-size: 12px;
+    height: 38px;
+    font-weight: 400;
+    font-family: 'Lato';
+    color: #f0d8d9;
+  }
+  
+  textarea {
+    resize: none;
+    height: 192px;
+    padding-top: 10px;
+  }
+  
+  input {
+    margin-bottom: 16px;
+  }
+  ::placeholder {
+    color: #f48c8f;
+  }
+  
+  textarea:focus,
+  input:focus {
+    box-shadow: 0 0 3px #f0d8d9;
+  }
+  
+  .contact-info-title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-weight: 900;
+  }
+  
+  .contact-info-description,
+  .contact-info-contacts p,
+  .contact-info-contacts a {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .contact-info-description {
+    margin-top: 9px;
+  }
+  
+  .contact-info-contacts {
+    margin-top: 20px;
+  }
+  
+  .contact-info-location {
+    background: url(assets/1location.png) no-repeat 4px 5px;
+  
+    padding-left: 24px;
+  }
+  .contact-info-phone {
+    background: url(assets/2phone.png) no-repeat 2px 1px;
+    padding-left: 24px;
+  }
+  .contact-info-mail {
+    background: url(assets/3mail.png) no-repeat 1px 6px;
+    padding-left: 24px;
+  }
+  
+  .submit-button {
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 25px;
+    background: #f0d8d9;
+    color: #a3403b;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Lato';
+    cursor: pointer;
+  }
+  
+  .submit-button,
+  .submit-button:active,
+  .submit-button:focus {
+    outline: none;
+  }
+  
+  footer {
+    background: #2d303a;
+    padding: 22px 40px;
+  }
+  
+  footer .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-socials a {
+    margin-left: 4px;
+  }
+  
+  .copyright {
+    padding: 8px 2px;
+  }
+  
+  .contact-info-mail {
+    padding-top: 2px;
+  }

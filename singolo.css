@@ -35,7 +35,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: initial;
+    letter-spacing: -0.5px;
     height: 20px;
   }
   
@@ -163,22 +163,23 @@ body {
     color: #767e9e;
     font-weight: 300;
     text-align: justify;
+    letter-spacing: -0.2px;
   }
   
   .card {
     display: flex;
     flex-basis: 300px;
-    margin-bottom: 29px;
+    margin-bottom: 31px;
   }
   
   .card-description {
     font-size: 12px;
-    line-height: 22px;
     color: #767e9e;
     font-weight: 400;
     line-height: 22px;
     padding-top: 10px;
     text-align: justify;
+    letter-spacing: -0.1px;
   }
   
   .card-title {
@@ -223,7 +224,9 @@ body {
     line-height: 30px;
     color: #767e9e;
     font-weight: 300;
-    margin-top: 27px;
+    margin-top: 28px;
+    letter-spacing: -0.2px;
+
   }
   
   .portfolio-menu {
@@ -293,8 +296,9 @@ body {
     line-height: 30px;
     color: #767e9e;
     font-weight: 300;
-    margin-top: 27px;
+    margin-top: 29px;
     text-align: justify;
+    letter-spacing: -0.2px;
   }
   
   .about-cards {
@@ -314,14 +318,7 @@ body {
     color: #666d89;
     font-weight: 900;
     margin-top: 15px;
-  }
-  
-  .card-description {
-    font-size: 12px;
-    line-height: 22px;
-    color: #767e9e;
-    font-weight: 400;
-    text-align: justify;
+    letter-spacing: -0.1px;
   }
   
   .card-socials {
@@ -329,7 +326,7 @@ body {
   }
   
   img.social {
-    margin-right: 5px;
+    margin-right: 3px;
     border-radius: 16px;
   }
   
@@ -357,6 +354,7 @@ body {
     font-weight: 300;
     margin-top: 27px;
     text-align: justify;
+    letter-spacing: -0.2px;
   }
   
   .quote-2-column {
@@ -413,10 +411,12 @@ body {
   .contact-info-contacts p,
   .contact-info-contacts a {
     font-size: 12px;
-    line-height: 22px;
+    line-height: 23px;
     color: #f0d8d9;
     font-weight: 400;
     text-decoration: none;
+    text-align: justify;
+    letter-spacing: -0.2px;
   }
   
   .contact-info-description {

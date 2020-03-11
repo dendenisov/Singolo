@@ -180,6 +180,7 @@ body {
     padding-top: 10px;
     text-align: justify;
     letter-spacing: -0.1px;
+    overflow: hidden;
   }
   
   .card-title {
@@ -411,7 +412,7 @@ body {
   .contact-info-contacts p,
   .contact-info-contacts a {
     font-size: 12px;
-    line-height: 23px;
+    line-height: 22px;
     color: #f0d8d9;
     font-weight: 400;
     text-decoration: none;

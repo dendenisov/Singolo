@@ -79,6 +79,10 @@ body {
     width: 370px;
     padding-top: 40px;
   }
+
+  .navbar__item_active .navbar__link {
+    color: #f06c64;
+  }
   
   .header-bottom {
     height: 6px;

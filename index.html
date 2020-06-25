@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Singolo</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-    />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
@@ -15,75 +11,69 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="content">
+        <input type="checkbox" id="checkbox" />
+        <div class="message-block hidden"></div>
+        <label for="checkbox"><img src="assets/burger.png" alt=""/></label>
         <div class="logo"><a href="#">Singolo</a></div>
-        <nav>
-          <ul class="navbar" id="navbar">
-            <li class="navbar__item" id="home">
-              <a class="navbar__link" href="#home">home</a>
+        <div class="navbar">
+          <div class="logo-hidden"><a href="#">Singolo</a></div>
+          <ul>
+            <li>
+              <a
+                class="navbar-active"
+                href="#home"
+                onclick="window.scrollTo(0,0)"
+                >home</a
+              >
             </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#services">services</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#portfolio">portfolio</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#about">about</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#contact">contact</a>
-            </li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
+
     <section class="home">
       <div class="carousel">
         <div class="items-container">
-          <div class="item active">
+          <div class="item active image-1">
             <div class="transparent-vertical"></div>
             <div class="transparent-horizontal"></div>
             <img
-              class="project-image image-vertical"
-              src="assets/img/iPhone Vertical.png"
+              class="image-vertical"
+              src="assets/iPhone Vertical.png"
               alt="project"
             />
             <img
               class="black-vertical"
-              src="assets/img/Screen-vertical.png"
+              src="assets/Screen-vertical.png"
               alt=""
             />
             <img
-              class="project-image"
-              src="assets/img/iPhone Horizontal.png"
+              class="image-horizontal"
+              src="assets/iPhone Horizontal.png"
               alt="project"
             />
             <img
               class="black-horizontal"
-              src="assets/img/Screen-horizontal.png"
+              src="assets/Screen-horizontal.png"
               alt=""
             />
           </div>
           <div class="item">
-            <img
-              class="project-image"
-              src="assets/img/Slide2.png"
-              alt="project"
-            />
+            <img class="image-2" src="assets/Slide2.png" alt="project" />
           </div>
         </div>
-        <div class="control left">
-          <img src="assets/img/Slider-left.svg" alt="" />
-        </div>
-        <div class="control right">
-          <img src="assets/img/Slider-right.svg" alt="" />
-        </div>
+        <div class="control left"></div>
+        <div class="control right"></div>
       </div>
     </section>
     <div class="slider-bottom"></div>
-    <div class="services">
+    <section class="services">
       <div class="content">
         <h1>
           <span id="services"></span>
@@ -110,7 +100,7 @@
           </div>
           <div class="card">
             <div class="card-logo">
-              <img src="assets/lightbulb.svg" alt="" width="60" height="60" />
+              <img src="assets/bulb.svg" alt="" width="60" height="60" />
             </div>
             <div class="card-info">
               <div class="card-title">Inovative Ideas</div>
@@ -128,7 +118,7 @@
               <div class="card-title">Love Is The Answer</div>
               <div class="card-description">
                 Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-                turpis, et consequat felis. Quisque condimentum. 
+                turpis, et consequat felis. Quisque condimentum.
               </div>
             </div>
           </div>
@@ -152,7 +142,7 @@
               <div class="card-title">24 / 7 Support</div>
               <div class="card-description">
                 Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
-                Nulla a sem erat. Pellen tesque egestas venenatis lorem .
+                Nulla a sem erat. Pellentesque egestas venenatis lorem .
               </div>
             </div>
           </div>
@@ -170,38 +160,51 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="services-bottom"></div>
     <section class="portfolio">
       <div class="content">
-        <div class="portfolio-title">Portfolio</div>
+        <div class="portfolio-title"><span id="portfolio"></span>Portfolio</div>
         <div class="portfolio-description">
           Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
           lacinia odio sem nec elit.
         </div>
         <div class="portfolio-menu">
-          <button class="portfolio-button">All</button>
+          <button class="portfolio-button portfolio-active">All</button>
           <button class="portfolio-button">Web Design</button>
           <button class="portfolio-button">Graphic Design</button>
           <button class="portfolio-button">Artwork</button>
         </div>
+
         <div class="portfolio-wrapper">
-        <div class="portfolio-images">
-          <img class="portfolio-image" src="assets/portfolio_img1.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img2.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img3.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img4.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img5.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img6.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img7.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img8.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img9.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img10.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img11.jpeg" alt="" />
-          <img class="portfolio-image" src="assets/portfolio_img12.jpeg" alt="" />
+          <div class="portfolio-images">
+            <img class="portfolio-image" src="assets/Project1.png" alt="" />
+            <img class="portfolio-image" src="assets/Project2.png" alt="" />
+            <img class="portfolio-image" src="assets/Project3.png" alt="" />
+            <img class="portfolio-image" src="assets/Project4.png" alt="" />
+            <img class="portfolio-image" src="assets/Project5.png" alt="" />
+            <img class="portfolio-image" src="assets/Project6.png" alt="" />
+            <img class="portfolio-image" src="assets/Project7.png" alt="" />
+            <img class="portfolio-image" src="assets/Project8.png" alt="" />
+            <img class="portfolio-image" src="assets/Project9.png" alt="" />
+            <img
+              class="portfolio-image"
+              src="assets/Project10.png"
+              alt=""
+            />
+            <img
+              class="portfolio-image"
+              src="assets/Project11.png"
+              alt=""
+            />
+            <img
+              class="portfolio-image"
+              src="assets/Project12.png"
+              alt=""
+            />
+          </div>
         </div>
-        </div> 
       </div>
     </section>
     <div class="portfolio-bottom"></div>
@@ -216,7 +219,7 @@
         </div>
         <div class="about-cards">
           <div class="about-card">
-            <img src="assets/About_us_img1.jpeg" alt="" class="card-photo" />
+            <img src="assets/photo1.png" alt="" class="card-photo" />
             <div class="card-name">Adam Jensen</div>
             <div class="card-description">
               Quisque luctus, quam eget molestie commodo, lacus purus cursus
@@ -224,127 +227,121 @@
             </div>
             <div class="card-socials">
               <a href="#" class="social"
-                ><img src="assets/icon-facebook.svg" alt="" class="social"
+                ><img src="assets/facebook.png" alt="" class="social"
               /></a>
               <a href="#" class="social"
-                ><img src="assets/icon-google+.svg" alt="" class="social"
+                ><img src="assets/google+.png" alt="" class="social"
               /></a>
               <a href="#" class="social"
-                ><img src="assets/icon-twitter.svg" alt="" class="social"
+                ><img src="assets/twitter.png" alt="" class="social"
               /></a>
               <a href="#" class="social"
-                ><img src="assets/icon-linked.svg" alt="" class="social"
+                ><img src="assets/linkedin.png" alt="" class="social"
               /></a>
             </div>
           </div>
           <div class="about-card">
-            <img src="assets/About_us_img2.jpeg" alt="" class="card-photo" />
+            <img src="assets/photo2.png" alt="" class="card-photo" />
             <div class="card-name">Desmond Miles</div>
             <div class="card-description">
               Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
               laoreet, viverra lacus ut, ultrices velit.
             </div>
             <div class="card-socials">
-                <a href="#" class="social"
-                  ><img src="assets/icon-facebook.svg" alt="" class="social"
-                /></a>
-                <a href="#" class="social"
-                  ><img src="assets/icon-google+.svg" alt="" class="social"
-                /></a>
-                <a href="#" class="social"
-                  ><img src="assets/icon-twitter.svg" alt="" class="social"
-                /></a>
-                <a href="#" class="social"
-                  ><img src="assets/icon-linked.svg" alt="" class="social"
-                /></a>
-              </div>
+              <a href="#" class="social"
+                ><img src="assets/facebook.png" alt="" class="social"
+              /></a>
+              <a href="#" class="social"
+                ><img src="assets/google+.png" alt="" class="social"
+              /></a>
+              <a href="#" class="social"
+                ><img src="assets/twitter.png" alt="" class="social"
+              /></a>
+              <a href="#" class="social"
+                ><img src="assets/linkedin.png" alt="" class="social"
+              /></a>
+            </div>
           </div>
           <div class="about-card">
-            <img src="assets/About_us_img3.jpeg" alt="" class="card-photo" />
+            <img src="assets/photo3.png" alt="" class="card-photo" />
             <div class="card-name">Scolara Visari</div>
             <div class="card-description">
               Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
               et consequat felis. Quisque condimentum.
             </div>
             <div class="card-socials">
-                <a href="#" class="social"
-                  ><img src="assets/icon-facebook.svg" alt="" class="social"
-                /></a>
-                <a href="#" class="social"
-                  ><img src="assets/icon-google+.svg" alt="" class="social"
-                /></a>
-                <a href="#" class="social"
-                  ><img src="assets/icon-twitter.svg" alt="" class="social"
-                /></a>
-                <a href="#" class="social"
-                  ><img src="assets/icon-linked.svg" alt="" class="social"
-                /></a>
-              </div>
+              <a href="#" class="social"
+                ><img src="assets/facebook.png" alt="" class="social"
+              /></a>
+              <a href="#" class="social"
+                ><img src="assets/google+.png" alt="" class="social"
+              /></a>
+              <a href="#" class="social"
+                ><img src="assets/twitter.png" alt="" class="social"
+              /></a>
+              <a href="#" class="social"
+                ><img src="assets/linkedin.png" alt="" class="social"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <div class="about-bottom"></div>
-    <section class="quote">
+    <section class="contact">
       <div class="content">
-        <div class="quote-title"></span>Get a Quote</div>
+        <div class="quote-title"><span id="contact"></span>Get a Quote</div>
         <div class="quote-description">
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
           Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
           lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
           tortor mauris condimentum nibh.
         </div>
-      <div class="quote-2-column">
-        <div class="form-column">
-           <form action="#" method="POST">
-            <input
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Name (Required)"
-              required
-            />
-            <br />
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Email (Required)"
-              required
-            /><br />
-            <input
-              id="subject"
-              type="text"
-              name="subject"
-              placeholder="Subject"
-            /><br />
-            <textarea
-            id="description"
-              placeholder="Describe your project in detail..."
-            ></textarea>
-            <br />
-          </form>
-          <button class="submit-button">
-            Send
-          </button>
-          <div class="message-block hidden">
-            <div class="message">
-              <p>The letter was send :)</p>
+        <div class="quote-2-column">
+          <div class="form-column">
+            <form action="" method="">
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Name (Required)"
+                required
+              />
               <br />
-              <p id="subject-result"></p>
-              <p id="description-result"></p>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email (Required)"
+                required
+              /><br />
+              <input
+                id="subject"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+              /><br />
+              <textarea
+                id="description"
+                placeholder="Describe your project in detail..."
+              ></textarea>
               <br />
-              <button class="close-button">OK</button>
+              <button class="submit-button">
+                Send
+              </button>
+            </form>
+
+            <div class="message-block message-send hidden">
+              <div class="message">
+                <p>The letter was send :)</p>
+                <br />
+                <p id="subject-result"></p>
+                <p id="description-result"></p>
+                <br />
+                <button class="close-button">OK</button>
+              </div>
             </div>
           </div>
-          <div class="message-block message-error hidden">
-            <div class="message">
-              <p>You have to fill required fields :(</p>
-              <br />
-              <button class="close-button">OK</button>
-            </div>
-          </div>
-        </div>
           <div class="contact-info">
             <div class="contact-info-title">Contact Information</div>
             <p class="contact-info-description">
@@ -361,7 +358,8 @@
               </a>
               <br />
               <a class="contact-info-mail" href="mailto:info@singolo.com"
-                >info@singolo.com</a>
+                >info@singolo.com</a
+              >
             </div>
           </div>
         </div>
@@ -371,12 +369,7 @@
     <footer>
       <div class="content">
         <div class="copyright">
-          <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="182px" height="11px">
-<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 1.3468753916099, 0, 0, 1.3862334687077,-1.36804091891106, 8.95449380401942)" font-size="8.657px"><tspan font-size="8.657px" font-family="Lato" fill="#666D89">&#169;&#32;Copyright&#32;&#50;&#48;&#49;&#51;&#32;</tspan><tspan font-size="8.657px" font-family="Lato" fill="#494E62">&#183;</tspan><tspan font-size="8.657px" font-family="Lato" fill="#666D89">&#32;by&#32;PSDchat&#46;com</tspan></text>
-</svg>
+          <img src="assets/Copyright.png" alt="" />
         </div>
         <div class="footer-socials">
           <a href="#"><img src="assets/footer-fb.png" alt=""/></a>

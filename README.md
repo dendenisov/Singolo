@@ -1,1 +1,1 @@
-# [Singolo](https://dendenisov.github.io/Singolo/)
+# click to see [Singolo](https://alinakutya.github.io/singolo/)

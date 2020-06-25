@@ -12,10 +12,13 @@ const MESSAGES = document.querySelectorAll('.message-block');
 let links = NAV.querySelectorAll('li > a');
 let sections = document.querySelectorAll('section');
 
+const CHECKBOX = document.querySelector('#checkbox');
+
 // navbar menu selector
 NAV.addEventListener('click', event => {
   links.forEach(el => el.classList.remove('navbar-active'));
   event.target.classList.add('navbar-active');
+  CHECKBOX.checked = false;
 });
 
 //portfolio picture outline
@@ -43,7 +46,7 @@ portfolioMenu.addEventListener('click', event => {
   });
   for (let i = 0; i < 12; i++) {
     portfolio.children[i].outerHTML =
-      '<img class="portfolio-image" src="assets/img/Project' +
+      '<img class="portfolio-image" src="assets/Project' +
       picturesNumbers[i] +
       '.png" alt="">';
   }
@@ -79,26 +82,26 @@ function nextItem(n) {
   hideItem('to-left');
   changeCurrentItem(n + 1);
   showItem('from-right');
+  changeBackground();
 }
 
 function previousItem(n) {
   hideItem('to-right');
   changeCurrentItem(n - 1);
   showItem('from-left');
+  changeBackground();
 }
 
 document.querySelector('.control.left').addEventListener('click', function() {
   if (isEnabled) {
     previousItem(currentItem);
   }
-  changeBackground();
 });
 
 document.querySelector('.control.right').addEventListener('click', function() {
   if (isEnabled) {
     nextItem(currentItem);
   }
-  changeBackground();
 });
 
 document
@@ -119,17 +122,16 @@ function changeBackground() {
 
 // form sending
 
-BUTTON.addEventListener('click', () => {
+document.querySelector('form').addEventListener('submit', event => {
+  event.preventDefault();
+
   let subject = document.getElementById('subject').value.toString();
   let description = document.getElementById('description').value.toString();
 
   if (
-    !document.getElementById('email').value ||
-    !document.getElementById('name').value
+    document.getElementById('email').checkValidity() &&
+    document.getElementById('name').checkValidity()
   ) {
-    document.querySelector('.message-error').classList.remove('hidden');
-    return;
-  } else {
     if (!subject) {
       document.getElementById('subject-result').innerText = 'Without subject';
     } else {
@@ -145,13 +147,17 @@ BUTTON.addEventListener('click', () => {
         'Description: ' + description;
     }
 
-    document.querySelector('.message-block').classList.remove('hidden');
+    document.querySelector('.message-send').classList.remove('hidden');
   }
 });
 
 CLOSE_BUTTONS.forEach(btn => {
   btn.addEventListener('click', () =>
-    MESSAGES.forEach(el => el.classList.add('hidden'))
+    MESSAGES.forEach(el => {
+      console.log(el);
+      el.classList.add('hidden');
+      document.querySelector('form').reset();
+    })
   );
 });
 
